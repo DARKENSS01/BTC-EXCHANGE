@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #2b2d42;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+nav a:hover {
+  background-color:
+  #007bff;
+}
+
+main {
+max-width: 1000px;
+margin: 0 auto;
+padding: 2rem;
+}
+
+.hero {
+background-color: #f2f2f2;
+text-align: center;
+padding: 4rem 2rem;
+}
+
+.hero h2 {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+
+.hero p {
+font-size: 1.5rem;
+margin-bottom: 2rem;
+}
+
+.button {
+display: inline-block;
+background-color: #007bff;
+color: #fff;
+text-decoration: none;
+padding: 1rem 2rem;
+border-radius: 0.25rem;
+transition: background-color 0.3s ease;
+}
+
+.button:hover {
+background-color: #0062cc;
+}
+
+.features {
+margin-top: 4rem;
+text-align: center;
+}
+
+.features h3 {
+font-size: 2rem;
+margin-bottom: 2rem;
+}
+
+.features ul {
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.features li {
+margin-right: 2rem;
+}
+
+.features li:last-child {
+margin-right: 0;
+}
+
+.features i {
+font-size: 2rem;
+margin-right: 1rem;
+color: #007bff;
+}
+
+.how-it-works {
+margin-top: 4rem;
+text-align: center;
+}
+
+.how-it-works h3 {
+font-size: 2rem;
+margin-bottom: 2rem;
+}
+
+.how-it-works ol {
+list-style: none;
+counter-reset: step;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;
+max-width: 600px;
+margin-top: 2rem;
+}
+
+.how-it-works li {
+counter-increment: step;
+text-align: center;
+}
+
+.how-it-works li:before {
+content: counter(step);
+font-size: 2rem;
+display: block;
+margin-bottom: 1rem;
+color: #007bff;
+}
+
+footer {
+background-color: #f2f2f2;
+text-align: center;
+padding: 2rem;
+}
+
+footer p {
+font-size: 1rem;
+color: #333;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 600px) {
+.hero h2 {
+font-size: 2rem;
+}
+
+.hero p {
+font-size: 1.25rem;
+}
+
+.button {
+font-size: 1rem;
+}
+
+.features ul {
+flex-wrap: wrap;
+}
+
+.features li {
+margin-right: 1rem;
+margin-bottom: 1rem;
+}
+
+.how-it-works ol {
+flex-direction: column;
+}
+
+.how-it-works li:before {
+margin-bottom: 0.5rem;
+}
+}
